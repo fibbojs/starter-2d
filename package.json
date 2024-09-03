@@ -18,11 +18,13 @@
   "devDependencies": {
     "@fibbojs/2d": "0.0.4",
     "@fibbojs/core": "0.0.4",
+    "@fibbojs/devtools": "^0.0.4",
     "@fibbojs/event": "0.0.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-top-level-await": "^1.4.4",
-    "vite-plugin-wasm": "^3.3.0"
+    "vite-plugin-wasm": "^3.3.0",
+    "vue": "^3.5.0"
   },
   "dependencies": {
     "@dimforge/rapier2d": "^0.14.0",

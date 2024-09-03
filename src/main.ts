@@ -1,6 +1,6 @@
 import './style.css'
 import { FAttachedCamera, FComponentEmpty, FRectangle, FScene } from '@fibbojs/2d'
-// import { fDebug } from '@fibbojs/devtools'
+import { fDebug } from '@fibbojs/devtools'
 import { FKeyboard } from '@fibbojs/event'
 import { loadLevel } from './level'
 import Character from './classes/Character'
@@ -9,11 +9,9 @@ import Character from './classes/Character'
   const scene = new FScene()
   await scene.init()
   await scene.initPhysics()
-  /*
   // Debug the scene
   if (import.meta.env.DEV)
     fDebug(scene)
-  */
 
   // Create a death zone
   const deathZone = new FComponentEmpty(scene, {
