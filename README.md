@@ -6,7 +6,7 @@ A 2d game starter based on Vite
 - Clone the repository
 
 ```bash
-npx degit fibbojs/starter-2d starter-2d
+npx tiged fibbojs/starter-2d starter-2d
 ```
 
 - Install the dependencies
