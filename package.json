@@ -16,10 +16,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@fibbojs/2d": "0.0.6",
-    "@fibbojs/core": "0.0.6",
-    "@fibbojs/devtools": "0.0.6",
-    "@fibbojs/event": "0.0.6",
+    "@fibbojs/2d": "^0.0.9",
+    "@fibbojs/core": "^0.0.9",
+    "@fibbojs/devtools": "^0.0.9",
+    "@fibbojs/event": "^0.0.9",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-top-level-await": "^1.4.4",
