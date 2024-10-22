@@ -1,5 +1,5 @@
 import { FCharacterControllerKP, FSprite } from '@fibbojs/2d'
-import type { FScene } from '@fibbojs/2d'
+import type { FRigidBodyOptions, FScene } from '@fibbojs/2d'
 
 export default class Character extends FSprite {
   constructor(scene: FScene) {
@@ -12,6 +12,13 @@ export default class Character extends FSprite {
     // Initialize the character controller
     this.controller = new FCharacterControllerKP(scene, {
       component: this,
+    })
+  }
+
+  initSensor(options?: FRigidBodyOptions): void {
+    super.initSensor({
+      ...options,
+      scaleOffset: { x: 0.1, y: 0.1 },
     })
   }
 }

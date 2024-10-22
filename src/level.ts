@@ -7,7 +7,6 @@ function addGround(scene: FScene, position: { x: number, y: number }) {
     position,
   })
   ground.initCollider()
-  scene.addComponent(ground)
 }
 
 export function loadLevel(scene: FScene) {
