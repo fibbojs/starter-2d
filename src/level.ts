@@ -16,6 +16,6 @@ export function loadLevel(scene: FScene) {
   }
 
   // Add platforms
-  addGround(scene, { x: 6, y: 3 })
-  addGround(scene, { x: 7, y: 3 })
+  addGround(scene, { x: 6, y: 1 })
+  addGround(scene, { x: 7, y: 1 })
 }
