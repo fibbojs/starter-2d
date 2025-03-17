@@ -1,21 +1,20 @@
-import type { FScene } from '@fibbojs/2d'
 import { FSprite } from '@fibbojs/2d'
 
-function addGround(scene: FScene, position: { x: number, y: number }) {
-  const ground = new FSprite(scene, {
+function addGround(position: { x: number, y: number }) {
+  const ground = new FSprite({
     texture: 'ground_0022.png',
     position,
   })
   ground.initCollider()
 }
 
-export function loadLevel(scene: FScene) {
+export function loadLevel() {
   // Create the ground
   for (let x = 0; x < 10; x++) {
-    addGround(scene, { x: x - 4.5, y: -1 })
+    addGround({ x: x - 4.5, y: -1 })
   }
 
   // Add platforms
-  addGround(scene, { x: 6, y: 1 })
-  addGround(scene, { x: 7, y: 1 })
+  addGround({ x: 6, y: 1 })
+  addGround({ x: 7, y: 1 })
 }

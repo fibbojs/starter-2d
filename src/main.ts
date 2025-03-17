@@ -14,32 +14,32 @@ import Character from './classes/Character'
     fDebug(scene)
 
   // Create a death zone
-  const deathZone = new FComponentEmpty(scene, {
+  const deathZone = new FComponentEmpty({
     position: { x: 0, y: -5 },
     scale: { x: 20, y: 0.1 },
   })
   deathZone.initCollider()
 
   // Load level
-  loadLevel(scene)
+  loadLevel()
 
   /**
    * Create character
    */
-  const character = new Character(scene)
+  const character = new Character()
   character.onCollisionWith(deathZone, () => {
     character.transform.position = { x: 0, y: 5 }
     console.log('Sprite collided with the death zone!')
   })
 
   // Create keyboard
-  const keyboard = new FKeyboard(scene)
+  const keyboard = new FKeyboard()
   keyboard.onKeyDown('p', () => {
     character.transform.position = { x: 0, y: 5 }
   })
 
   // Attach a camera to the character
-  scene.camera = new FAttachedCamera(scene, {
+  scene.camera = new FAttachedCamera({
     target: character,
   })
 })()
